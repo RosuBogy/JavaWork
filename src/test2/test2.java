@@ -23,13 +23,13 @@ public class test2 {
 			String[] operanzi = s.split("\\+");
 			numar1 = Integer.parseInt(operanzi[0]);
 			numar2 = Integer.parseInt(operanzi[1]);
-			System.out.print(numar1+numar2);		
+			System.out.println(numar1+numar2);		
 		} else if (s.contains("-"))
 		{
 			String[] operanzi = s.split("-");
 			numar1 = Integer.parseInt(operanzi[0]);
 			numar2 = Integer.parseInt(operanzi[1]);
-			System.out.print(numar1-numar2);
+			System.out.println(numar1-numar2);
 		}else
 		{
 			System.out.println("No valid operator found!");
