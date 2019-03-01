@@ -15,7 +15,10 @@ public class test2 {
 		int numar1 =0;
 		int numar2 =0 ;
 		
-		if (s.contains("+"))
+		if (s.contains(" "))
+		{
+			System.out.println("No spaces allowed!");
+		}else if (s.contains("+"))
 		{
 			String[] operanzi = s.split("\\+");
 			numar1 = Integer.parseInt(operanzi[0]);
@@ -30,10 +33,7 @@ public class test2 {
 		}else
 		{
 			System.out.println("No valid operator found!");
-		}
-		
-		
-		
+		}		
 		/*char operator =s.charAt(1);
 		String numar1 = ""+ s.charAt(0);
 		String numar2 = "" + s.charAt(2);
