@@ -23,19 +23,8 @@ public static void main(String[] args) {
 		{	
 			   String op = operanzi[i];
 			   int numar = Integer.parseInt(operanzi[i+1]);
-			   System.out.println(numar);
-			   
-			   switch(op)
-			   {
-			   case "*":
-				   rezultat*=numar;
-				   break;
-			   case "+":
-				   rezultat+=numar;
-				   break;
-			   }
-			   
-		    }
+	}
+		
 		System.out.println(rezultat);
 		}
 		
