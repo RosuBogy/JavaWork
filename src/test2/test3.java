@@ -25,9 +25,14 @@ public static void main(String[] args) {
 			   int numar = Integer.parseInt(operanzi[i+1]);
 			   System.out.println(numar);
 			   
-			   if(op=="*")
+			   switch(op)
 			   {
-				  rezultat*=numar; 
+			   case "*":
+				   rezultat*=numar;
+				   break;
+			   case "+":
+				   rezultat+=numar;
+				   break;
 			   }
 			   
 		    }
