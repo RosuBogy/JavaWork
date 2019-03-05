@@ -4,12 +4,12 @@ public class ME4 {
 	public static int eval(String s) {
 
 		if (s.contains("+")) {
-			int index = s.indexOf("+");
+			int index = s.lastIndexOf("+");
 			String left = s.substring(0, index);
 			String right = s.substring(index + 1);
 			return eval(left) + eval(right);
 		} else if (s.contains("*")) {
-			int index = s.indexOf("*");
+			int index = s.lastIndexOf("*");
 			String left = s.substring(0, index);
 			String right = s.substring(index + 1);
 			return eval(left) * eval(right);
