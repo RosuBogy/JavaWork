@@ -4,14 +4,13 @@ public class Factorial {
 	
 	public static int fac(int n)
 	{
-		int result =1;
 		
-		if(n==0 || n==1)
+		if(n==0)
 		{
-			return result;
+			return 1;
 		}
 		
-		return result = fac(n-1)*n;
+		return fac(n-1)*n;
 	}
 	
 	public static void main(String[] args) {
