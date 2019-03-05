@@ -1,6 +1,6 @@
 package tutoriale;
 
-import java.lang.reflect.Array;
+
 import java.util.Arrays;
 
 public class EA7 {
@@ -14,7 +14,7 @@ public class EA7 {
 			return-1;
 		}
 		
-		for(int i=0;i<l;i++)
+		/*for(int i=0;i<l;i++)
 		{
 			for(int j=1;j<sir.length-1;j++)
 			{
@@ -25,7 +25,7 @@ public class EA7 {
 					sir[j]=temp;
 				}
 			}
-		}
+		}*/
 		Arrays.sort(sir);
 		return sir[n-1];
 	}
