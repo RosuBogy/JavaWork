@@ -23,7 +23,16 @@ public static void main(String[] args) {
 		{	
 			   String op = operanzi[i];
 			   int numar = Integer.parseInt(operanzi[i+1]);
-	}
+			   
+			   if(op.contains("*"))
+			   {
+				   rezultat*=numar;
+			   }
+			   if(op.contains("+"))
+			   {
+				   rezultat+=numar;
+			   }
+	    }
 		
 		System.out.println(rezultat);
 		}
@@ -31,6 +40,7 @@ public static void main(String[] args) {
 		else
 	{
 		System.out.println("No valid operator found!");
-	}	
+	}
+	scanner.close();
 }
 }
