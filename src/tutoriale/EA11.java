@@ -4,15 +4,12 @@ public class EA11 {
 	
 	public static boolean isUnique(int[] arr)
 	{
-		int l = arr.length-1;
+		//int l = arr.length-1;
 		for(int i=0;i<arr.length-1;i++)
 		{
-		    if(arr[i] == arr[l])
+		    if(arr[i] == arr[arr.length-1] || arr[i] == arr[i+1])
 		    {
-		    	l--;
-		    	return false;
-		    }else if(arr[i] == arr[i+1])
-		    {
+		    	//l--;
 		    	return false;
 		    }
 		
