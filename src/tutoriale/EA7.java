@@ -1,5 +1,8 @@
 package tutoriale;
 
+import java.lang.reflect.Array;
+import java.util.Arrays;
+
 public class EA7 {
 	
 	public static  int nthSmallest(int[] sir , int n)
@@ -23,7 +26,7 @@ public class EA7 {
 				}
 			}
 		}
-		
+		Arrays.sort(sir);
 		return sir[n-1];
 	}
 	
