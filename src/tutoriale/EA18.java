@@ -5,12 +5,15 @@ public class EA18 {
 	public static int countSums(int[] arr) {
 		int count = 0;
 
-		for (int i = 1; i <= arr.length - 1; i++) {
-			int sum = arr[i] + arr[i - 1];
-			for (int elm : arr) {
-				if (sum == elm) {
-					count++;
+		fp: for (int i = 0; i < arr.length; i++) {
+			for (int j = i + 1; j < arr.length; j++) {
+				for (int k = j + 1; k < arr.length; k++) {
+					if (arr[i] + arr[j] == arr[k]) {
+						count++;
+						continue fp;
+					}
 				}
+
 			}
 		}
 		return count;
