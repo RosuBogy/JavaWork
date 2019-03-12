@@ -26,6 +26,7 @@ public class MiniCalc {
 		case '/':
 			if (operand == 0) {
 				System.out.println("Nu se poate");
+				break;
 			}
 			curValue /= operand;
 			break;
