@@ -24,6 +24,9 @@ public class MiniCalc {
 			curValue *= operand;
 			break;
 		case '/':
+			if (operand == 0) {
+				System.out.println("Nu se poate");
+			}
 			curValue /= operand;
 			break;
 		case '=':
@@ -47,11 +50,12 @@ public class MiniCalc {
 		while (true) {
 			System.out.print(">");
 			op = scanner.nextLine();
-			if (op == "x") {
+			if ("x".equals(op)) {
+				scanner.close();
 				break;
 			}
 			System.out.println(calc.doOperation(op));
 		}
-
+		scanner.close();
 	}
 }
