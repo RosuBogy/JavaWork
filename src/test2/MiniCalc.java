@@ -44,7 +44,7 @@ public class MiniCalc {
 	public static void main(String[] args) {
 
 		String op = null;
-
+		Display disp = new Display();
 		Scanner scanner = new Scanner(System.in);
 		MiniCalc calc = new MiniCalc();
 
@@ -55,7 +55,11 @@ public class MiniCalc {
 				scanner.close();
 				break;
 			}
-			System.out.println(calc.doOperation(op));
+
+			// int rez = (int) calc.doOperation(op);
+
+			disp.show("" + calc.doOperation(op));
+
 		}
 		scanner.close();
 	}
