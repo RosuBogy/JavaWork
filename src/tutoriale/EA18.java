@@ -1,19 +1,20 @@
 package tutoriale;
 
+import java.util.Arrays;
+
 public class EA18 {
 
 	public static int countSums(int[] arr) {
+		Arrays.sort(arr);
 		int count = 0;
-
-		fp: for (int i = 0; i < arr.length; i++) {
-			for (int j = i + 1; j < arr.length; j++) {
-				for (int k = j + 1; k < arr.length; k++) {
-					if (arr[i] + arr[j] == arr[k]) {
+		fp: for (int i = arr.length - 1; i >= 0; i--) {
+			for (int j = 0; j < i; j++) {
+				for (int k = j + 1; k < i; k++) {
+					if ((arr[j] + arr[k]) == arr[i]) {
 						count++;
 						continue fp;
 					}
 				}
-
 			}
 		}
 		return count;
