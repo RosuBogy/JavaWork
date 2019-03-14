@@ -33,7 +33,8 @@ public class EA17 {
 	}
 
 	public static void main(String[] args) {
-		System.out.println(Arrays.toString(removeDuplicates(new int[] { 1 })));
+		System.out.println(Arrays.toString(removeDuplicates(new int[] { 1, 2, 3 })));
+		System.out.println(Arrays.toString(removeDuplicates(new int[] { 1, 1, 2, 2, 2, 3 })));
 	}
 
 }
