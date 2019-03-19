@@ -12,6 +12,9 @@ public class Armonica {
 
 	public static void main(String[] args) {
 		System.out.println(harmonicAvg(10, 20));
+		System.out.println(harmonicAvg(10, -10));
+		System.out.println(harmonicAvg(5, 4));
+		System.out.println(harmonicAvg(6, 4));
 	}
 
 }
