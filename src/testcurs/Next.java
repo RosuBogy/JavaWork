@@ -15,6 +15,6 @@ public class Next {
 	}
 
 	public static void main(String[] args) {
-		System.out.println(next(new int[] { 1, 5, 7, 2, 4, 14, 45, 67, 898, 14 }, 14));
+		System.out.println(next(new int[] { 1, 2, 3, 5 }, 222));
 	}
 }

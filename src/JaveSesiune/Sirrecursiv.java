@@ -9,7 +9,7 @@ public class Sirrecursiv {
 
 		for (int i = 0; i < s.length(); i++) {
 			char ch = s.charAt(i);
-			permutari("" + prefix + ch, s.substring(0, i) + s.substring(i + 1, s.length()));
+			permutari("" + prefix + ch, s.substring(0, i) /* + s.substring(i + 1, s.length() */);
 		}
 	}
 

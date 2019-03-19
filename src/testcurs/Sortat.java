@@ -15,7 +15,7 @@ public class Sortat {
 	}
 
 	public static void main(String[] args) {
-		System.out.println(isSorted(new int[] { 2, 1, 4, 6, 7 }));
+		System.out.println(isSorted(new int[] { 1, 2, -1, 4, 6, 7 }));
 	}
 
 }
