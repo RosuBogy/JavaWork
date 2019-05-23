@@ -12,20 +12,25 @@ public class fileWorking {
 	public static void main(String[] args) throws IOException {
 
 		readFile();
+
 	}
 
 	private static void readFile() throws IOException {
 		BufferedReader br = new BufferedReader(new InputStreamReader(new FileInputStream("test1.txt")));
+		int suma = 0;
 
 		while (true) {
 			String s = br.readLine();
-
 			if (s == null) {
 				break;
 			}
+			String[] numere = s.split(",");
 
-			System.out.println(s);
+			for (String numar : numere) {
+				suma += Integer.parseInt(numar);
+			}
 		}
+		System.out.println(suma);
 
 		br.close();
 	}
