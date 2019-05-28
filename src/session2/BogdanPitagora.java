@@ -1,6 +1,6 @@
 package session2;
 
-public class Pitagora implements MyMyPitagoraChecker {
+public class BogdanPitagora implements MyPitagoraChecker {
 
 	public boolean check(int a, int b, int c) {
 		if (a * a + b * b == c * c) {
@@ -8,5 +8,4 @@ public class Pitagora implements MyMyPitagoraChecker {
 		}
 		return false;
 	}
-
 }
