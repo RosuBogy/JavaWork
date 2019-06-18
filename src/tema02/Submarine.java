@@ -20,4 +20,8 @@ public class Submarine implements Armata {
 
 	}
 
+	public String getResource() {
+		return "Submarine";
+	}
+
 }

@@ -21,4 +21,8 @@ public class Nave_Razboi implements Armata {
 		System.out.println(nume);
 
 	}
+
+	public String getResource() {
+		return "Nave_Razboi";
+	}
 }

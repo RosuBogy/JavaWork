@@ -23,4 +23,8 @@ public class Avioane implements Armata {
 
 	}
 
+	public String getResource() {
+		return "Avion";
+	}
+
 }

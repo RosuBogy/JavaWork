@@ -21,4 +21,8 @@ public class Tancuri implements Armata {
 		System.out.println(nume);
 	}
 
+	public String getResource() {
+		return "Tanc";
+	}
+
 }

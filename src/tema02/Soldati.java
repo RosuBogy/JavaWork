@@ -20,4 +20,8 @@ public class Soldati implements Armata {
 
 	}
 
+	public String getResource() {
+		return "Soldat";
+	}
+
 }

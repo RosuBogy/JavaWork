@@ -29,9 +29,18 @@ public class CentralCommand {
 			resursa.ShowName();
 			System.out.println(resursa.FirePower());
 			putere_totala2 += resursa.FirePower();
+
 		}
 
 		System.out.println("Putere totala a doua armata este: " + putere_totala2);
+	}
+
+	public static void confruntare(Armata[] arm1, Armata[] arm2) {
+		for (Armata resursa : arm1) {
+			if (resursa.getResource() == "Soldat") {
+				resursa.FirePower();
+			}
+		}
 	}
 
 }
