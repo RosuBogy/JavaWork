@@ -7,8 +7,6 @@ import java.io.IOException;
 import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;
 
-import com.savnet.utils.demo.model.Database;
-
 public class PasswordRepository {
 
 	private static final String PASSWORD_DATABASE = "AccountsDatabases.txt";

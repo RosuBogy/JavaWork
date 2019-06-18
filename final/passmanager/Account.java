@@ -8,9 +8,10 @@ public class Account {
 
 	public Account(String site, String user, String password) {
 		super();
+		this.site = site;
 		this.user = user;
 		this.password = password;
-		this.site = site;
+
 	}
 
 	@Override
