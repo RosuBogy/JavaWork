@@ -12,6 +12,9 @@ public class FileDatabase implements Database {
 
 	@Override
 	public void addAccount(Account account) {
+		if (accounts.contains(account)) {
+			throw new RuntimeException("Site and user already exists");
+		}
 		accounts.add(account);
 		System.out.println(account);
 

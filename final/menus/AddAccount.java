@@ -22,6 +22,7 @@ public class AddAccount extends MenuItem {
 
 		Account account = new Account(site, user, password);
 		db.addAccount(account);
+
 	}
 
 }

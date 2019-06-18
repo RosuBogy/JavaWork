@@ -17,6 +17,14 @@ public abstract class MenuItem {
 
 	public abstract void doAction();
 
+	public void run() {
+		try {
+			doAction();
+		} catch (RuntimeException e) {
+			System.out.println(e.getMessage());
+		}
+	}
+
 	public String getOption() {
 		return option;
 	}

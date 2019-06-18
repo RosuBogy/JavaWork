@@ -33,7 +33,7 @@ public class Menu extends MenuItem {
 			if (item == backAction) {
 				return;
 			}
-			item.doAction();
+			item.run();
 		}
 	}
 
