@@ -9,7 +9,7 @@ import java.io.ObjectOutputStream;
 
 public class PasswordRepository {
 
-	private static final String PASSWORD_DATABASE = "AccountsDatabases.txt";
+	private static final String PASSWORD_DATABASE = "AccountsDatabases.ser";
 
 	public Database load() throws FileNotFoundException, IOException, ClassNotFoundException {
 		ObjectInputStream ois = new ObjectInputStream(new FileInputStream(PASSWORD_DATABASE));

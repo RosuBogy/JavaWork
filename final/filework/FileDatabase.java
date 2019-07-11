@@ -1,12 +1,14 @@
 package filework;
 
+import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
 
 import passmanager.Account;
+import passmanager.PasswordManagerSession;
 
-public class FileDatabase implements Database {
+public class FileDatabase implements Database, Serializable {
 
 	private List<Account> accounts = new ArrayList<>();
 
@@ -17,6 +19,7 @@ public class FileDatabase implements Database {
 		}
 		accounts.add(account);
 		System.out.println(account);
+		PasswordManagerSession.getInstance().getRepository().save(this);
 
 	}
 
@@ -26,16 +29,18 @@ public class FileDatabase implements Database {
 	}
 
 	@Override
-	public void removeAccount(String user) {
+	public void removeAccount(String user, String site) {
 		Iterator<Account> iterator = accounts.iterator();
 
 		while (iterator.hasNext()) {
 			Account s = iterator.next();
-			if (s.getUser().equals(user)) {
+			if (s.getUser().equals(user) && s.getSite().equals(site)) {
 				iterator.remove();
+			} else {
+				throw new RuntimeException("Account does not exist");
 			}
 		}
-
+		PasswordManagerSession.getInstance().getRepository().save(this);
 	}
 
 }

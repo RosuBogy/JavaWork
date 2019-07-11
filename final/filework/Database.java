@@ -10,6 +10,6 @@ public interface Database {
 
 	List<Account> getAccount();
 
-	void removeAccount(String user); // ? maybe by site
+	void removeAccount(String user, String site);
 
 }

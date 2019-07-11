@@ -1,6 +1,8 @@
 package passmanager;
 
-public class Account {
+import java.io.Serializable;
+
+public class Account implements Serializable {
 
 	private String user;
 	private String password;
@@ -25,6 +27,10 @@ public class Account {
 
 	public String getUser() {
 		return user;
+	}
+
+	public String getSite() {
+		return site;
 	}
 
 	@Override
